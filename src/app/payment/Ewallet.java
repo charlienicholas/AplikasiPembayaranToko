@@ -1,6 +1,6 @@
 package app.payment;
 
-public class Ewallet {
+public class Ewallet extends MetodePembayaran {
 
     private double saldo;
 
