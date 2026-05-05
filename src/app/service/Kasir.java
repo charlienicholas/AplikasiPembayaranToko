@@ -7,15 +7,15 @@ import app.payment.MetodePembayaran;
 
 public class Kasir {
 
-    private double total;
     private ArrayList<Produk> belanja = new ArrayList<>();
-
+    
     public void tambahProduk(Produk produk){
         this.belanja.add(produk);
         System.out.println(produk.getNama() + " berhasil ditambahkan ke keranjang.");
     }
-
+    
     public double hitungTotal(){
+        private double total;
         for (int i = 0 ; i < belanja.size() ; i++){
             total += this.belanja.get(i).getHarga();
         }
@@ -23,7 +23,7 @@ public class Kasir {
     }
 
     public void lakukanPembayaran(MetodePembayaran mp){
-        mp.prosesBayar(this.total);
+        mp.prosesBayar(this.hitungTotal());
     }
 
 }

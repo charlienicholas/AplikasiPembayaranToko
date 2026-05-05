@@ -38,11 +38,15 @@ public class Main {
         input.nextLine();
 
 
-        if (mp == 1) {var bayar = new Cash();}
-        if (mp == 2) {var bayar = new Ewallet();}
-        if (mp == 3) {var bayar = new KartuKredit();}
-
-        kasir.lakukanPembayaran(bayar);
+        switch (mp) {
+            case 1:
+                
+                var cash = new Cash();
+                break;
+        
+            default:
+                break;
+        }
     }
 
 }
