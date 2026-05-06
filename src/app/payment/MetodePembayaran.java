@@ -12,6 +12,6 @@ public abstract class MetodePembayaran {
         this.namaMetode = namaMetode;
     }
 
-    abstract void prosesBayar(double total);
+    abstract public void prosesBayar(double total);
 
 }

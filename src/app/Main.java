@@ -44,9 +44,20 @@ public class Main {
 
         switch (mp) {
             case 1: 
-                cout 
+                var cash = new Cash();
+                System.out.print("Bayar Tunai\nMasukkan jumlah uang = ");
+                cash.setUangBayar(input.nextDouble());
+                kasir.lakukanPembayaran(cash);
                 break;
-
+            case 2:
+                var ewallet = new Ewallet();
+                System.out.print("E-wallet\nJumlah saldo = ");
+                ewallet.setSaldo(input.nextDouble());
+                kasir.lakukanPembayaran(ewallet);
+            case 3:
+                var kk = new KartuKredit();
+                System.out.println("Kartu Kredit");
+                kasir.lakukanPembayaran(kk);
             default:
                 break;
         }
