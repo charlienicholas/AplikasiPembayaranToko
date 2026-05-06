@@ -15,7 +15,7 @@ public class Kasir {
     }
     
     public double hitungTotal(){
-        private double total;
+        double total = 0;
         for (int i = 0 ; i < belanja.size() ; i++){
             total += this.belanja.get(i).getHarga();
         }

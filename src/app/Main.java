@@ -29,6 +29,8 @@ public class Main {
             kasir.tambahProduk(new Produk(namaProduk, hargaProduk));
         }
 
+        kasir.hitungTotal();
+
         System.out.println("Menu pembayaran:");
         System.out.println("1. Cash");
         System.out.println("2. E-Wallet");
@@ -37,16 +39,19 @@ public class Main {
         int mp = input.nextInt();
         input.nextLine();
 
+        
+
 
         switch (mp) {
-            case 1:
-                
-                var cash = new Cash();
+            case 1: 
+                cout 
                 break;
-        
+
             default:
                 break;
         }
+
+        input.close();
     }
 
 }

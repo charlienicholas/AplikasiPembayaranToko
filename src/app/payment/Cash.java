@@ -13,7 +13,11 @@ public class Cash extends MetodePembayaran {
     }
 
     public void prosesBayar(double total){
-        System.out.println("Pembayaran tunai sebesar Rp." + total + " berhasil");
+        if (this.uangBayar >= total) {
+            System.out.println("Pembayaran tunai sebesar Rp." + total + " berhasil");
+        } else {
+            System.out.println("Uang anda kurang!!!");
+        }
     }
 
 }
