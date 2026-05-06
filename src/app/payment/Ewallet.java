@@ -17,7 +17,7 @@ public class Ewallet extends MetodePembayaran {
             this.saldo -= total;
             System.out.println("Pembayaran berhasil, saldo berkurang Rp." + total + ". Tersisa Rp." + this.saldo);
         } else {
-            System.out.println("Pembayaran errror, saldo anda tidak cukup!!!");
+            System.out.println("Pembayaran gagal, saldo anda tidak cukup!!!");
         }
     }
 

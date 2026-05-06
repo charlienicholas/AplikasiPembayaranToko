@@ -24,9 +24,10 @@ public class Main {
             String namaProduk = input.nextLine();
             System.out.print("Harga produk = ");
             double hargaProduk = input.nextDouble();
-            System.out.println();
-        
+            input.nextLine();
             kasir.tambahProduk(new Produk(namaProduk, hargaProduk));
+            System.out.println();
+
         }
 
         kasir.hitungTotal();
@@ -54,10 +55,12 @@ public class Main {
                 System.out.print("E-wallet\nJumlah saldo = ");
                 ewallet.setSaldo(input.nextDouble());
                 kasir.lakukanPembayaran(ewallet);
+                break;
             case 3:
                 var kk = new KartuKredit();
                 System.out.println("Kartu Kredit");
                 kasir.lakukanPembayaran(kk);
+                break;
             default:
                 break;
         }
