@@ -23,10 +23,10 @@ public class Main {
             System.out.print((i+1) + ". Nama produk = ");
             String namaProduk = input.nextLine();
             System.out.print("Harga produk = ");
-            String hargaProduk = input.nextLine();
+            double hargaProduk = input.nextDouble();
             System.out.println();
         
-            tambahProduk(new Produk(namaProduk, hargaProduk));
+            kasir.tambahProduk(new Produk(namaProduk, hargaProduk));
         }
 
         System.out.println("Menu pembayaran:");
